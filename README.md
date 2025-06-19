@@ -1,3 +1,5 @@
+# Dart API로 부터 불러오는 셀은 시간이 오래걸립니다(30분)
+
 
 # 📘 워런 버핏 가치투자 기준 기반 국내 반도체 기업 클러스터 분석
 
@@ -81,16 +83,17 @@
 - Jupyter Notebook / Jupyter Lab
 
 ### 필수 패키지 설치
-
+```python
 pip install pandas numpy scikit-learn matplotlib requests ipywidgets
-pip install git+https://github.com/josw123/dart-fss.git
 
+pip install git+https://github.com/josw123/dart-fss.git
+```
 
 ### DART API 키 등록
 ```python
 import dart_fss as dart
 dart.set_api_key('본인_API_KEY')
-
+```
 
 ## 🧭 인사이트 및 한계
 
@@ -125,9 +128,9 @@ dart.set_api_key('본인_API_KEY')
 
 ## 📎 예시 출력
 ```text
-✅ 삼성전자 기업은 Cluster 0 에 속합니다.
-💡 투자 판단: 안정적 가치주 – 장기 투자 및 배당 전략에 적합합니다.
-
+삼성전자 기업은 Cluster 0 에 속합니다.
+투자 판단: 안정적 가치주 – 장기 투자 및 배당 전략에 적합합니다.
+```
 
 
 ## 👋 참고
